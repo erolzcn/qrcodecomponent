@@ -22,6 +22,7 @@
       box-sizing: border-box;
       font-family: 'Outfit', sans-serif;
       font-size: var(--f15);
+      
 
     }
 
@@ -38,13 +39,44 @@
     main{
 
       height: 100vh;
-      background-color: aliceblue;
+      background-color: var(--Light-gray);
+      
 
     }
 
+    section{
+      display: flex;
+      justify-content: center;
+      
+    }
+    
+    .box{
+      width: 250px;
+      height: 400px;
+      margin-top: 15%;
+      padding: 30px 20px;
+      border-radius: 15px;
+      background-color: var(--White);
+    }
 
+    .qrpic{
+      width:100%;
+      border-radius: 15px;
+    }
 
-    .attribution { font-size: 11px; text-align: center; }
+    .header{
+      color: var(--Dark-blue);
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .ptext{
+      text-align: center;
+      color: var(--Grayish-blue);
+    }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 5%;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
 
@@ -54,19 +86,26 @@
 
   <main>
     <section>
-      <article>
-        Improve your front-end skills by building projects
+      <article class="box">
 
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        <img src="images/image-qr-code.png" class="qrpic" alt="">
+
+        <h1 class="header"> Improve your front-end skills by building projects </h1>
+
+        <p class="ptext">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
       </article>
     </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Erol Özcan</a>.
+    </div>
+
   </main>
 
   
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
